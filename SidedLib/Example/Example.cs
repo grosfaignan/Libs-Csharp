@@ -49,23 +49,23 @@ namespace Sided.Example
 			TestClass right = new TestClass("cojack", 72, Color.Blue);
 			// instanciate Paner and add Created T variable
 			this.Paner = new Sided<TestClass>(left, right);
-			Console.WriteLine($"left paner value {this.Paner.Left.Get().ToString()}");
-			Console.WriteLine($"right paner value {this.Paner.Right.Get().ToString()}");
+			Console.WriteLine($"left paner value {this.Paner.Left.Side.ToString()}");
+			Console.WriteLine($"right paner value {this.Paner.Right.Side.ToString()}");
 			//use some methods :
-			Console.WriteLine($"left paner method call :{this.Paner.Left.Get().SomeMethode()}");
-			Console.WriteLine($"right paner method call :{this.Paner.Right.Get().SomeMethode()}");
+			Console.WriteLine($"left paner method call :{this.Paner.Left.Side.SomeMethode()}");
+			Console.WriteLine($"right paner method call :{this.Paner.Right.Side.SomeMethode()}");
 
 			//modify values as this
 			TestClass modified = new TestClass("scorcese", 4, Color.Bisque);
-			this.Paner.Right.Set(modified);
-			Console.WriteLine($"right paner modified value {this.Paner.Right.Get().ToString()}");
+			this.Paner.Right.Side = modified;
+			Console.WriteLine($"right paner modified value {this.Paner.Right.Side.ToString()}");
 
 			//or as this
 			TestClass another = new TestClass("luther king", 42, Color.Salmon);
 			Left<TestClass> sidedValue = new Left<TestClass>();
-			sidedValue.Set(another);
+			sidedValue.Side = another;
 			this.Paner.SetSide(sidedValue);
-			Console.WriteLine($"left paner modified value {this.Paner.Left.Get().ToString()}");
+			Console.WriteLine($"left paner modified value {this.Paner.Left.Side.ToString()}");
 		}
 	}
 }

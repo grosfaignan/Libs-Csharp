@@ -1,60 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Runtime.CompilerServices;
-using System.Threading;
-
-namespace Sided
+﻿namespace Sided
 {
-
-	/// <summary>
-	/// Generic class for Left side of sided
-	/// </summary>
-	/// <typeparam name="T"></typeparam>
 	public class Left<T>
 	{
-		private T Side { get; set; }
-
-		/// <summary>
-		/// left side setter
-		/// </summary>
-		/// <param name="value"></param>
-		public void Set(T value)
-		{
-			Side = value;	
-		}
-		/// <summary>
-		/// left side getter
-		/// </summary>
-		/// <returns></returns>
-		public T Get()
-		{
-			return Side;
-		}
+		public T Side { get; set; }
 	}
-
-	/// <summary>
-	/// Generic Class for Right side of Sided
-	/// </summary>
-	/// <typeparam name="T"></typeparam>
 	public class Right<T>
 	{
-		private T Side { get; set; }
-
-		/// <summary>
-		/// Right side setter
-		/// </summary>
-		/// <param name="value"></param>
-		public void Set(T value)
-		{
-			Side = value;
-		}
-		/// <summary>
-		/// right side getter
-		/// </summary>
-		/// <returns></returns>
-		public T Get()
-		{
-			return Side;
-		}
+		public T Side { get; set; }
 	}
 
 	/// <summary>
@@ -66,9 +18,6 @@ namespace Sided
 		public Left<T> Left { get; private set; }
 		public Right<T> Right { get; private set; }
 
-		/// <summary>
-		/// empty constructor with both side init
-		/// </summary>
 		public Sided()
 		{
 			Left = new();
@@ -94,8 +43,8 @@ namespace Sided
 		/// <param name="right"></param>
 		public void SetBoth(T left, T right)
 		{
-			Left.Set(left);
-			Right.Set(right);
+			Left.Side = left;
+			Right.Side =right;
 		}
 		/// <summary>
 		/// set left side object

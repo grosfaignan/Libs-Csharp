@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <Compile Remove="Sided2.cs" />
+    <Compile Remove="Tests\SidedTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Tests\SidedTest.cs" />
   </ItemGroup>
 
   <ItemGroup>

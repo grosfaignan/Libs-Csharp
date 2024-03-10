@@ -54,12 +54,11 @@ namespace Example
 ## Documentation
 
 ### Classes `Left<T>` `Right<T>` 
-Les classes Left<T> et Right<T> représente les valeurs gauche et droite d'un objet Sided<T>. Elles disposent toutes deux des méthodes suivantes :
+Les classes Left<T> et Right<T> représente les valeurs gauche et droite d'un objet Sided<T>. Elles disposent toutes deux de la propriété suivante :
 
 |    Methodes    |        Definitions       |
 |---------------|--------------------------|
-|`Set(T value)` | définit la valeur gauche |
-|`Get()`        | récupère la valeur gauche|
+|`public T Side` | définit le type et la valeur gauche ou droite |
 
 ### Classe `Sided<T>`
 La classe Sided<T> représente un objet avec une valeur gauche et droite de type T.
