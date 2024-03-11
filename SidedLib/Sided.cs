@@ -8,7 +8,6 @@
 	{
 		public T Side { get; set; }
 	}
-
 	/// <summary>
 	/// Pan manager for left-right side values
 	/// </summary>
@@ -23,41 +22,21 @@
 			Left = new();
 			Right = new();
 		}
-
-		/// <summary>
-		/// constructor with both side setting option
-		/// </summary>
-		/// <param name="left"></param>
-		/// <param name="right"></param>
 		public Sided(T left, T right)
 		{
 			Left = new();
 			Right = new();
 			SetBoth(left, right);
 		}
-
-		/// <summary>
-		/// set both side object
-		/// </summary>
-		/// <param name="left"></param>
-		/// <param name="right"></param>
 		public void SetBoth(T left, T right)
 		{
 			Left.Side = left;
 			Right.Side =right;
 		}
-		/// <summary>
-		/// set left side object
-		/// </summary>
-		/// <param name="left"></param>
 		public void SetSide(Left<T> left)
 		{
 			Left = left;
 		}
-		/// <summary>
-		/// set right side object
-		/// </summary>
-		/// <param name="left"></param>
 		public void SetSide(Right<T> right)
 		{
 			Right = right;
