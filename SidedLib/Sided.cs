@@ -2,11 +2,11 @@
 {
 	public class Left<T>
 	{
-		public T Side { get; set; }
+		public T? Side { get; set; }
 	}
 	public class Right<T>
 	{
-		public T Side { get; set; }
+		public T? Side { get; set; }
 	}
 	/// <summary>
 	/// Pan manager for left-right side values
