@@ -15,8 +15,8 @@
 	/// <typeparam name="T"></typeparam>
 	public class Sided<T>
 	{
-		public Left<T> Left { get; private set; }
-		public Right<T> Right { get; private set; }
+		public Left<T>? Left { get; private set; }
+		public Right<T>? Right { get; private set; }
 
 		public Sided()
 		{

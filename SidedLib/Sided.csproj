@@ -7,12 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Sided2.cs" />
-    <Compile Remove="Tests\SidedTest.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Tests\SidedTest.cs" />
+    <None Include="Sided.Test.cs" />
   </ItemGroup>
 
   <ItemGroup>
